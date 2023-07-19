@@ -1,0 +1,16 @@
+.playParent {
+  .div1 {
+    height: 200px;
+  }
+
+  .div2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px;
+    background-color: black;
+    img {
+      width: 33%;
+    }
+  }
+}

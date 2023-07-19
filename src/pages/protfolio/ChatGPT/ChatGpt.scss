@@ -1,0 +1,184 @@
+.chatgptContainer {
+  display: flex;
+  justify-content: center;
+
+  .chatgptparent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .chatgptHeroSection {
+      display: flex;
+      background: #74aa9c;
+      justify-content: center;
+      height: 1174px;
+      width: 100%;
+
+      .content {
+        width: 80%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+
+        .textContent {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          .heading {
+            font-family: Manrope;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 102px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ffffff;
+          }
+          .body {
+            display: flex;
+            flex-direction: column;
+            .span1 {
+              font-family: Manrope;
+              font-size: 22px;
+              font-weight: 600;
+              line-height: 35px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #ffffff;
+            }
+            .span2 {
+              font-family: Manrope;
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 35px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #ffffff;
+            }
+          }
+        }
+        .imagecontent {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .chatgptAbout {
+      width: 80%;
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .heading {
+        width: 50%;
+        span {
+          font-family: Manrope;
+          font-size: 42px;
+          font-weight: 600;
+          line-height: 67px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #252323;
+        }
+      }
+      .description {
+        width: 50%;
+
+        span {
+          //styleName: Header 3 (32px);
+          font-family: Manrope;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 51px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #252323;
+        }
+      }
+    }
+
+    .ProblemStatement {
+      height: 1070px;
+      background: #3032440f;
+      width: 100%;
+    }
+
+    .chatgptContext {
+      width: 80%;
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .heading {
+        width: 50%;
+        span {
+          font-family: Manrope;
+          font-size: 42px;
+          font-weight: 600;
+          line-height: 67px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #252323;
+        }
+      }
+      .description {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        .span1 {
+          font-family: Manrope;
+          font-size: 50px;
+          font-weight: 700;
+
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
+        .span2 {
+          //styleName: Header 3 (32px);
+          font-family: Manrope;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 51px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #252323;
+        }
+      }
+    }
+
+    .ProblemStatement2 {
+      height: 703px;
+      background: #3032440f;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        width: 70%;
+        font-family: Avenir;
+        font-size: 64px;
+        font-style: italic;
+        font-weight: 800;
+        line-height: 102px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #000000;
+      }
+      span {
+        font-family: Avenir;
+        font-size: 64px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 102px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #74aa9c;
+      }
+    }
+  }
+}

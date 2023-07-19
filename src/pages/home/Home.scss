@@ -1,0 +1,111 @@
+.homeContainer {
+  overflow: hidden;
+  background: #000000;
+  .homeParent {
+    display: flex;
+    flex-direction: column;
+
+    .heroSection {
+      height: 60vh;
+      background: white;
+    }
+
+    .gameSection {
+      height: 100vh;
+      overflow-x: hidden;
+      background-image: url("../../assets/images/gameSection.png");
+    }
+
+    .workSection {
+      display: flex;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 90%;
+      align-self: center;
+
+      .workLeft {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        .textParent {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          width: 50%;
+          .heading {
+            font-family: Manrope !important;
+            font-size: 96px;
+            font-weight: 800;
+            line-height: 154px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .body {
+            font-family: Manrope;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: 0em;
+          }
+        }
+      }
+
+      .workRight {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        overflow: hidden;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          color: white;
+
+          .cardimage {
+            height: 100%;
+            cursor: pointer;
+          }
+
+          .title1 {
+            font-family: Manrope;
+            font-size: 38px;
+            font-weight: 400;
+            line-height: 61px;
+            color: #9a9b9f;
+          }
+          .title2 {
+            font-family: Manrope;
+            font-size: 46px;
+            font-weight: 800;
+            line-height: 74px;
+
+            color: #ffffff;
+          }
+          .btnparent {
+            display: flex;
+            gap: 10px;
+            .btn {
+              width: 396px;
+              height: 85px;
+
+              font-family: Manrope;
+              font-size: 32px;
+              font-weight: 400;
+              background: #e5c1fb66;
+              color: #e5c1fb;
+            }
+          }
+          .description {
+            font-family: Manrope;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 51px;
+          }
+        }
+      }
+    }
+  }
+}

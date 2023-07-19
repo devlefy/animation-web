@@ -1,0 +1,41 @@
+.container {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+
+  .headerParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 95%;
+    .logo {
+      font-family: Plaster;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 58px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+
+      span {
+        font-family: Manrope;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 35px;
+      }
+
+      span:hover {
+        padding-bottom: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
