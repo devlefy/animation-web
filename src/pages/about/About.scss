@@ -26,6 +26,14 @@
         letter-spacing: 0em;
         text-align: justify;
         color: #ffffff;
+
+        @media (max-width: 1000px) {
+          font-family: Manrope;
+          font-size: 44px;
+          font-weight: 400;
+          line-height: 60px;
+          text-align: start;
+        }
       }
       button {
         width: 226px;
@@ -38,9 +46,26 @@
         line-height: 51px;
         letter-spacing: 0em;
         background: transparent;
+
+        @media (max-width: 1000px) {
+          width: 150px;
+          height: 62px;
+          border-color: #e5c1fb;
+          color: #e5c1fb;
+          font-family: Manrope;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 41px;
+          letter-spacing: 0em;
+          background: transparent;
+        }
       }
       button:hover {
         cursor: pointer;
+      }
+
+      @media (max-width: 1000px) {
+        width: 90%;
       }
     }
 
@@ -59,7 +84,10 @@
         line-height: 51px;
         width: 30%;
         color: #ffffff;
-        text-align: end;
+        text-align: center;
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
       }
       .span2 {
         font-family: Manrope;
@@ -67,9 +95,22 @@
         font-weight: 500;
         line-height: 44px;
         letter-spacing: 0em;
-        text-align: left;
+        text-align: center;
         color: #ffffff;
         width: 70%;
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
     }
 
@@ -89,6 +130,12 @@
         text-align: left;
         color: #ffffff;
         align-self: flex-start;
+
+        @media (max-width: 1000px) {
+          font-size: 66px;
+          font-weight: 600;
+          line-height: 124px;
+        }
       }
       .span2 {
         font-family: Manrope;
@@ -99,6 +146,11 @@
         text-align: left;
         color: #ffffff;
         align-self: center;
+        @media (max-width: 1000px) {
+          font-size: 66px;
+          font-weight: 600;
+          line-height: 124px;
+        }
       }
       .span3 {
         font-family: Manrope;
@@ -109,6 +161,11 @@
         text-align: left;
         color: #ffffff;
         align-self: flex-end;
+        @media (max-width: 1000px) {
+          font-size: 66px;
+          font-weight: 600;
+          line-height: 124px;
+        }
       }
     }
 
@@ -118,10 +175,11 @@
       .leftSection {
         width: 33%;
         position: relative;
+        overflow: hidden;
 
         .contentdiv {
           position: absolute;
-          top: 50%;
+
           span {
             font-family: Manrope;
             font-size: 32px;
@@ -131,6 +189,9 @@
             text-align: left;
             color: #ffffff;
           }
+        }
+        @media (max-width: 1000px) {
+          display: none;
         }
       }
       .centerSection {
@@ -165,12 +226,22 @@
             color: #ffffff;
           }
         }
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
       }
       .rightSection {
         width: 33%;
         display: flex;
         align-items: center;
         justify-content: end;
+
+        @media (max-width: 1000px) {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
 
         .card {
           width: 90%;
@@ -196,6 +267,11 @@
             color: #ffffff;
           }
         }
+      }
+
+      @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
       }
     }
   }

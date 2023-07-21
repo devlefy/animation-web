@@ -1,0 +1,45 @@
+.footerParent {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+
+  .textStle {
+    font-family: Manrope;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    @media (max-width: 1000px) {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 44px;
+    }
+  }
+
+  .linksParent {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    span {
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 51px;
+      letter-spacing: 0em;
+
+      @media (max-width: 1000px) {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 44px;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

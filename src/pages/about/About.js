@@ -8,31 +8,63 @@ import Header from '../../components/header/Header';
 
 const About = () => {
 
+    const [hoverText, setHoverText] = useState('')
+    const [focusedCardIndex, setFocusedCardIndex] = useState(-1);
+    const [top, setTop] = useState(0);
+    const [active, setactive] = useState(false);
 
-    const [focusedCardIndex, setFocusedCardIndex] = useState(0);
+
+
+
+
+
+    const handleHoverChange = (text) => {
+        setHoverText(text)
+
+
+    }
+
+
+    console.log("hoverText", hoverText);
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
             const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0;
-            const centerPosition = scrollOffset + windowHeight / 2;
 
             const cards = document.querySelectorAll('.card');
-            let cardIndex = -1;
 
-            cards.forEach((card, index) => {
-                const rect = card.getBoundingClientRect();
+            const crd1 = cards[0].getBoundingClientRect()
+            const crd3 = cards[2].getBoundingClientRect()
+
+            const crd2 = cards[1].getBoundingClientRect()
 
 
-                const cardCenter = rect.bottom + rect.height;
 
-                if (cardCenter >= scrollOffset && cardCenter <= centerPosition) {
-                    cardIndex = index + 1; // Add 1 to adjust the index
-                    return; // Exit the loop once the closest card is found
-                }
-            });
 
-            setFocusedCardIndex(cardIndex);
+            setTop(crd1.bottom + 400)
+
+            if (crd1.top <= windowHeight - 300) {
+                setFocusedCardIndex(1)
+
+
+            }
+
+
+            if (crd3.top <= windowHeight - 300) {
+                setFocusedCardIndex(3)
+
+
+            }
+
+            if (crd2.top <= windowHeight - 300) {
+                setFocusedCardIndex(2)
+
+
+            }
+
+
+
+
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -49,12 +81,16 @@ const About = () => {
 
 
 
-    console.log("focusedCardIndex", focusedCardIndex);
+
+
+
+
+
 
 
     return (
         <>
-            <Header color='#ffffff' background="#000000" />
+            <Header color='#ffffff' background="#000000" onHoverChange={handleHoverChange} />
             <div className='containerAbout'>
                 <div className='aboutParent'>
                     <div className='introSection'>
@@ -82,7 +118,7 @@ const About = () => {
 
                         <div className='leftSection'>
 
-                            <div className='contentdiv'>
+                            <div className='contentdiv' style={{ bottom: focusedCardIndex ? `${top}px` : null }}>
                                 <span style={{ color: focusedCardIndex === 1 ? "white" : focusedCardIndex === 2 || focusedCardIndex === 3 ? "grey" : "white" }}>
                                     ui/ux design, figma,
                                     interaction design,

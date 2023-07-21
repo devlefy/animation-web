@@ -1,24 +1,97 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.scss';
 import Rectangle from '../../assets/images/Rectangle 2552.png'
 import chatgpt from '../../assets/images/C719913A-C7B6-4EB4-A20B-8142769869AA 2@2x.png'
+import home1 from '../../assets/new_images/home1.png'
+
 import Header from '../../components/header/Header';
 import { useNavigate } from 'react-router-dom';
 
 
 
+
 const Home = () => {
+
+
+    const [HoveredText, setHoveredText] = useState('');
+
+
+
+    const handleHoverChange = (text) => {
+        setHoveredText(text)
+    };
 
     const navigate = useNavigate()
 
+
+    const [isDragging, setIsDragging] = useState(false);
+    const [offsetX, setOffsetX] = useState(0);
+    const [offsetY, setOffsetY] = useState(0);
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+
+    const handleMouseDown = (e) => {
+        setIsDragging(true);
+        setOffsetX(e.clientX - position.x);
+        setOffsetY(e.clientY - position.y);
+    };
+
+    const handleMouseMove = (e) => {
+        if (!isDragging) return;
+
+        const x = e.clientX - offsetX;
+        const y = e.clientY - offsetY;
+        setPosition({ x, y });
+    };
+
+    const handleMouseUp = () => {
+        setIsDragging(false);
+    }
+
     return (
         <>
-            <Header />
+            <Header onHoverChange={handleHoverChange} />
             <div className='homeContainer'>
 
                 <div className='homeParent'>
-                    <div className='heroSection'></div>
-                    <div className='gameSection'></div>
+                    <div className='heroSection'>
+
+                        {
+                            HoveredText &&
+                            <div className='scrollingtext'>
+                                <ul class="ticker">
+                                    <li>{HoveredText}</li>
+                                    <li>{HoveredText}</li>
+                                    <li>{HoveredText}</li>
+                                    <li>{HoveredText}</li>
+                                    <li>{HoveredText}</li>
+                                    <li>{HoveredText}</li>
+                                    <li>{HoveredText}</li>
+
+
+
+
+                                </ul>
+                            </div>
+                        }
+                    </div>
+                    <div className='gameSection'>
+                        <div
+                            className="image-container"
+                            onMouseDown={handleMouseDown}
+                            onMouseMove={handleMouseMove}
+                            onMouseUp={handleMouseUp}
+                        >
+                            <img
+                                className={`draggable-image ${isDragging ? 'dragging' : ''}`}
+                                src={home1}
+                                alt="Draggable Image"
+                                style={{
+                                    left: position.x + 'px',
+                                    top: position.y + 'px',
+                                }}
+                            />
+                        </div>
+                    </div>
                     <div className='workSection'>
                         <div className='workLeft'>
                             <div className='textParent'>

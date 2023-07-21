@@ -8,12 +8,59 @@
     .heroSection {
       height: 60vh;
       background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .scrollingtext {
+        width: 70%;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        padding: 10px;
+
+        .ticker {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          white-space: nowrap; /* Prevents text from wrapping */
+          animation: tickerAnimation 30s linear infinite; /* Adjust duration as needed */
+
+          li {
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+          }
+        }
+        @keyframes tickerAnimation {
+          0% {
+            transform: translateX(
+              100%
+            ); /* Start the animation off-screen to the right */
+          }
+          100% {
+            transform: translateX(
+              -100%
+            ); /* End the animation off-screen to the left */
+          }
+        }
+      }
     }
 
     .gameSection {
       height: 100vh;
       overflow-x: hidden;
-      background-image: url("../../assets/images/gameSection.png");
+      background-image: url("../../assets/new_images/room1.png");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .image-container {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
     }
 
     .workSection {
@@ -48,6 +95,9 @@
             line-height: 45px;
             letter-spacing: 0em;
           }
+        }
+        @media (max-width: 1000px) {
+          width: 100%;
         }
       }
 
@@ -104,7 +154,19 @@
             font-weight: 400;
             line-height: 51px;
           }
+
+          @media (max-width: 1000px) {
+            padding: 20px;
+          }
         }
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        flex-direction: column;
       }
     }
   }

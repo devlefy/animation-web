@@ -21,9 +21,13 @@ const Play = () => {
 
     const imgs = [img10, img3, img9, img2, img4, img5, img6, img7, img8, img1]
 
+    const handleHoverChange = (text) => {
+        console.log(text);
+    };
+
     return (
         <>
-            <Header />
+            <Header onHoverChange={handleHoverChange} />
             <div className='playParent'>
                 <div className='div1'></div>
 

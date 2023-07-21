@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.scss';
 
 import { Link, useNavigate } from "react-router-dom";
 
 
-const Header = ({ color, background }) => {
+const Header = ({ color, background, onHoverChange }) => {
 
     const navigate = useNavigate()
+
+
+
+    const handleMouseEnter = (text) => {
+
+        onHoverChange(text)
+    };
+
+    const handleMouseLeave = (text) => {
+
+        onHoverChange(text)
+    };
+
+
+
 
     return (
         <div className='container' style={{ background: background, color: color }}>
@@ -15,13 +30,16 @@ const Header = ({ color, background }) => {
                     <span>nj</span>
                 </div>
                 <div className='content'>
-                    <span onClick={() => navigate("/")}>
+                    <span onMouseEnter={() => handleMouseEnter('WORK')}
+                        onMouseLeave={() => handleMouseLeave("")} onClick={() => navigate("/")}>
                         WORK
                     </span>
-                    <span onClick={() => navigate("/about")}>
+                    <span onMouseEnter={() => handleMouseEnter('ABOUT')}
+                        onMouseLeave={() => handleMouseLeave("")} onClick={() => navigate("/about")}>
 
                         ABOUT
-                    </span>       <span onClick={() => navigate("/play")}>
+                    </span>       <span onMouseEnter={() => handleMouseEnter('PLAY')}
+                        onMouseLeave={() => handleMouseLeave("")} onClick={() => navigate("/play")}>
 
                         PLAY
                     </span>
