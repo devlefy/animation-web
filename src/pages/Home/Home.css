@@ -1,0 +1,310 @@
+.home-intro{
+    height: calc(100vh - 67px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.home-intro p{
+    color: #fff;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
+
+.home-pd{
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    left: -35px;
+    top: 50%;
+    z-index: -1;
+}
+
+.home-port{
+    position: absolute;
+    transform: rotate(90deg) translateY(-50%);
+    right: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+
+.anime-img{
+    max-width: 230px;
+    position: absolute;
+    z-index: 1;
+    top: 38%;
+    left: 50%;
+}
+
+
+
+.home-intro-2{
+    height:  calc(100vh - 67px);
+    background-image: url('../../assets/images/home2.png');
+    position: relative;
+}
+
+.home-work{
+    position: relative;
+    padding: 206px 0;
+}
+
+.home-work:before{
+    content: '';
+    width: 100%;
+    height: 1890px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+.home-work h2{
+    color: #FFF;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%; /* 153.6px */
+    position: relative;
+}
+
+.home-work p{
+    color: #FFF;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    position: relative;
+}
+
+.pages{
+    position: relative;
+}
+
+.page-poster{
+    margin-bottom: 24px;
+}
+
+.govendapagetile p.page-pre-head{
+    color: #9A9B9F;
+}
+
+p.page-pre-head{
+    color: #000;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 60.8px */
+    margin-bottom: 0 !important;
+}
+
+.pages .govendapagetile h3{
+    color: #fff;
+}
+
+.pages h3 {
+    color: #000;
+font-kerning: none;
+font-feature-settings: 'liga' off;
+font-family: Manrope;
+font-size: 46px;
+font-style: normal;
+font-weight: 800;
+line-height: 160%; /* 73.6px */
+margin-bottom: 0;
+}
+
+.page-para{
+    color: #000;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.023%; /* 51.207px */
+    margin-bottom: 24px;
+}
+
+.govendapagetile a.btn{
+    color: #760FB5;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 51.2px */
+    padding: 17px 47px;
+    /* display: flex; */
+    background: rgba(229, 193, 251, 0.70); 
+    text-decoration: none;
+}
+
+.page-tile{
+    margin-bottom: 178px;
+}
+
+.gptpagetile p.page-para, .davispagetile p.page-para{
+    color: #000 !important;
+}
+.gptpagetile a.btn{
+    color: #007F84;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 51.2px */
+    padding: 17px 47px;
+    /* display: flex; */
+    background: rgba(170, 221, 208, 0.60); 
+        text-decoration: none;
+}
+
+.pages .btn-holder{
+    display: flex;
+    gap: 13px;
+}
+
+.davispagetile a.btn{
+    color: #0357CB;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 51.2px */
+    padding: 17px 47px;
+    /* display: flex; */
+    background: rgba(102, 141, 195, 0.30);
+            text-decoration: none;
+}
+
+
+.work-sec-para{
+    max-width: 350px;
+}
+
+.davispagetile .page-poster{
+    background: #74B4E4; 
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1440px){
+
+    .home-work::before {
+        height: 1721px;
+    }
+    .home-intro p {
+        font-size: 90px;
+    }
+    .anime-img {
+        max-width: 180px;
+        top: 33%;
+        left: 46%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+    .home-work::before {
+        height: 1530px;
+      }
+
+      .home-work h2 {
+        font-size: 60px;
+      }
+      .home-work p {
+        font-size: 20px;
+      }
+      .work-sec-para {
+        max-width: 251px;
+      }
+}
+
+@media only screen and (max-width: 900px){
+    .home-intro p {
+        font-size: 50px;
+      }
+      .home-work h2 {
+        text-align: center;
+      }
+
+      .home-work p {
+        font-size: 20px;
+        text-align: center;
+        max-width: 100%;
+      }
+      p.page-pre-head {
+        text-align: left !important;
+      }
+      p.page-para{
+        text-align: left !important;
+      }
+      
+}
+
+@media only screen and (max-width: 767px){
+    .home-intro p {
+        font-size: 30px;
+      }
+      .anime-img {
+        max-width: 100px;
+        top: 33%;
+        left: 40%;
+      }
+      .pages h3 {
+        font-size: 25px;
+      }
+
+      .govendapagetile a.btn {
+        font-size: 18px;
+        width: 100%;
+      }
+      .home-work::before {
+        height: 1292px;
+      }
+
+      .gptpagetile a.btn {
+        font-size: 18px;
+      }
+      .pages .btn-holder {
+        display: flex;
+        gap: 13px;
+        flex-direction: column;
+      }
+      .davispagetile a.btn {
+        font-size: 18px;
+      }
+
+      .home-pd {
+        top: 70%;
+      }
+      .home-port {
+        top: 20%;
+      }
+}
