@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar-brand img{
     filter: invert(1);
 }
@@ -72,4 +73,80 @@ nav{
     font-weight: 600;
     color: #000;
   }
+=======
+.navbar-brand img{
+    filter: invert(1);
+}
+nav{
+    z-index: 999;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+}
+.nav-link{
+    color: #000;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160.023%;
+}
+
+
+.marquee {
+    background: #e9c9fc;
+    color: #000;
+    font-kerning: none;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160.023%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+@-webkit-keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .marquee {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    z-index: 99;
+  }
+  .marquee span {
+    text-transform: uppercase;
+    will-change: transform;
+    transform: translateX(0);
+    white-space: nowrap;
+    -webkit-animation: marquee 4s linear infinite;
+            animation: marquee 4s linear infinite;
+    font-size: 100px;
+    font-family: "Gravitas One", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #000;
+  }
+>>>>>>> 6f693cdf53ce5d42a9d153a45212076c0bcb2b35
   
