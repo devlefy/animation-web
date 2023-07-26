@@ -415,6 +415,7 @@
         padding-bottom: 50px;
         width: 80%;
         flex-direction: column;
+        gap: 50px;
 
         .span1 {
           font-family: Manrope;
@@ -438,43 +439,98 @@
 
         .span3 {
           //styleName: Header 3 (32px);
+          //styleName: Header 3 (32px);
           font-family: Manrope;
           font-size: 32px;
           font-weight: 500;
           line-height: 51px;
           letter-spacing: 0em;
           text-align: left;
+
           color: #252323;
         }
 
         .box {
-          width: 100%;
+          width: 80%;
           height: 1131px;
           background-color: #9a9b9f;
-          display: flex;
-          flex-direction: column;
-          justify-content: end;
           margin-top: 50px;
-          .boxBody {
-            height: 279px;
-            width: 100%;
-            background: #b6b8bf;
-            display: flex;
-            justify-content: center;
+        }
+      }
+    }
 
-            span {
-              width: 80%;
-              padding-top: 10px;
-              padding-bottom: 10px;
-              //styleName: Header 3 (32px);
-              font-family: Manrope;
-              font-size: 32px;
-              font-weight: 500;
-              line-height: 51px;
-              letter-spacing: 0em;
-              text-align: left;
-              color: #252323;
-            }
+    .workingDesign {
+      display: flex;
+      justify-content: center;
+      padding-top: 100px;
+
+      width: 100%;
+
+      .body {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 80%;
+        flex-direction: column;
+
+        .span1 {
+          font-family: Manrope;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 38px;
+          letter-spacing: 0.14em;
+          text-align: left;
+          color: #007f84;
+        }
+        .span2 {
+          font-family: Manrope;
+          font-size: 64px;
+          font-weight: 600;
+          line-height: 102px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          color: #000000;
+        }
+
+        .span3 {
+          //styleName: Header 3 (32px);
+          //styleName: Header 3 (32px);
+          font-family: Manrope;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 51px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          color: #252323;
+        }
+        img {
+          width: 100%;
+          margin-top: 50px;
+        }
+
+        p {
+          font-family: Manrope;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 51px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          color: #252323;
+        }
+
+        .chatgptiamgesparent {
+          width: 100%;
+          display: flex;
+          gap: 20px;
+
+          .childdiv {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 20px;
           }
         }
       }

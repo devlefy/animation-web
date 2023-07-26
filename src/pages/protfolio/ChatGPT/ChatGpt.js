@@ -2,6 +2,12 @@ import React from 'react';
 import Header from '../../../components/header/Header';
 
 import ChatGPT_logo from "../../../assets/images/ChatGPT_logo 1.png";
+import working_with_design1 from "../../../assets/images/working_with_design1.png";
+import working_with_design2 from "../../../assets/images/working_with_design2.png";
+import workingwithdesignPlan from "../../../assets/images/workingwithdesignPlan.png";
+
+
+
 
 import './ChatGpt.scss'
 
@@ -171,30 +177,141 @@ const ChatGpt = () => {
                     </div>
 
 
-                    <div className='workingSystem'>
+                    <div className='workingDesign'>
                         <div className='body'>
                             <span className='span1'>PROCESS</span>
                             <span className='span2'>Working with a design system</span>
                             <span className='span3'>Using the ChatGPT Design System in Figma, I designed multiple layout iterations within Figma to find the most optimal components and assets to ensure a consistent and clear design. I added components to their existing system so that I could add to the visual story.</span>
+                            <img src={working_with_design1} alt="" />
+                            <img src={working_with_design2} alt="" />
 
 
+                        </div>
+                    </div>
 
-                            {/* 
-                            {ideaBox.map((item) => {
+                    <div className='workingDesign'>
+                        <div className='body'>
+                            <span className='span1'>PROCESS</span>
+                            <span className='span2'>Context through Prompts and Characters</span>
+                            <ol>
+                                <li>
+                                    <span className='span3'>Offering a prompt library</span>
+                                    <ul>
+                                        <li>
+                                            <span className='span3'>This would improve the variety of prompts used by users. </span>
+                                        </li>
+                                        <li>
+                                            <span className='span3'>will also help decrease the learning curve for not so tech-savvy users.</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span className='span3'>Allowing them to create their own prompts and save them</span>
+                                    <ul>
+                                        <li>
+                                            <span className='span3'>This would improve the variety of prompts used by users. </span>
+                                        </li>
+                                        <li>
+                                            <span className='span3'>
+                                                Even though ChatGPT has a conversation history, it is not great at remembering context. Users can easily re-use prompts when ChatGPT forgets context.</span>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                                return (
-                                    <div className='box'>
-                                        <div className='boxBody'>
-                                            <span>
-                                                {item}
+                                <li>
+                                    <span className='span3'>Selecting a character for ChatGPT so that it can maintain if for the whole conversation </span>
+                                    <ul>
+                                        <li>
+                                            <span className='span3'>Due to its open ended information library, it is difficult to narrow down context when using ChatGPT as a tool. Inbuild characters will help limit the parameters of the conversation so that users can get improved answers.
                                             </span>
-                                        </div>
-                                    </div>
-                                )
-                            })} */}
+                                        </li>
+                                        <li>
+                                            <span className='span3'>
+                                                Choosing a character can stay for the entirety of the conversation, decreasing time typing the character in every single prompt.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                            <img src={workingwithdesignPlan} alt="" />
+                        </div>
+                    </div>
+
+                    <div className='workingDesign'>
+                        <div className='body'>
+                            <span className='span1'>PROCESS</span>
+                            <span className='span2'>Error Handling through Error Messages, Feedback Loop and Alternatives</span>
+
+                            <p>I focused on error handling that are not based on informational load or training data to limit the scope of this project. </p>
+
+                            <span className='span3'>Different types of error messages:</span>
+
+                            <ol>
+                                <li>
+                                    <span className='span3'>Misunderstands a message due to ambiguity</span>
+
+                                </li>
+                                <li>
+                                    <span className='span3'>Response to Insensitive or Offensive Content</span>
+
+                                </li>
+
+                                <li>
+                                    <span className='span3'>Response to Insensitive or Offensive Content </span>
+
+                                </li>
+
+                                <li>
+                                    <span className='span3'>Misspelling or Typo </span>
+
+                                </li>        <li>
+                                    <span className='span3'>Gathering feedback from users </span>
+
+                                </li>
+
+                                <li>
+                                    <span className='span3'>Suggesting an alternative prompt or question </span>
+
+                                </li>
+                            </ol>
+
+                            <img src={workingwithdesignPlan} alt="" />
+                        </div>
+                    </div>
 
 
+                    <div className='workingDesign'>
+                        <div className='body'>
+                            <span className='span1'>PROCESS</span>
+                            <span className='span2'>Customizing Capabilities</span>
 
+                            <p>When approaching customizing capabilities, I looked at current customization. ChatGPT only offers users with a light theme and a dark theme.</p>
+
+                            <span className='span3'>This is what I added:</span>
+
+                            <ol>
+                                <li>
+                                    <span className='span3'>Light Theme Update</span>
+
+                                </li>
+                                <li>
+                                    <span className='span3'>Customized Text Color</span>
+
+                                </li>
+
+                                <li>
+                                    <span className='span3'>Customized Text Color </span>
+
+                                </li>
+
+                                <li>
+                                    <span className='span3'>Customized Text Color </span>
+
+                                </li>
+                            </ol>
+
+                            <img src={workingwithdesignPlan} alt="" />
                         </div>
                     </div>
                 </div>
